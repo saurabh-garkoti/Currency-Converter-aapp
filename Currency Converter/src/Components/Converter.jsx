@@ -26,7 +26,7 @@ const Converter = () => {
   useEffect(() => {
     fetchCurrencies();
   }, []);
-  console.log(currencies);
+  console.log(currencies,"check_currencies");
 
   // Conversions -> https://api.frankfurter.app/latest?amount=1&from=USD&to=INR
   const CurrencyConvert = async () => {

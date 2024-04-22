@@ -26,7 +26,6 @@ const CurrencyDropdown = ({
           className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         >
           {/* render favorites */}
-
           {favorites.map((currency) => {
             return (
               <option className="bg-gray-200" value={currency} key={currency}>
@@ -45,6 +44,9 @@ const CurrencyDropdown = ({
                 </option>
               );
             })}
+          {/* const currencies = new Set(["INR","AUD","CNY"]) const fav = new
+          Set(["INR"]) ;
+          const nonFav = [...currencies.difference(fav)] */}
         </select>
         <button
           onClick={() => handleFavorite(currency)}
